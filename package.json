@@ -1,0 +1,14 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "a cool tweet app",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "author": "kelvin and ani",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
