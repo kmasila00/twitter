@@ -3,11 +3,9 @@ var app = express();
 var chalk = require('chalk');
 var swig = require('swig');
 var morgan = require('morgan');
-var routes = require('./routes/');
+var routes = require('./routes');
 
 
-app.use('/', routes);
-app.use(express.static('public'));
 
 app.use(morgan('dev'));
 
@@ -19,6 +17,8 @@ app.set('views', __dirname + '/views');
 
 swig.setDefaults({ cache: false });
 
+app.use('/', routes);
+app.use(express.static('public'));
 
 // app.use(function(req, res, next){
 // 	console.log("Use is called!");
