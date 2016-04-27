@@ -4,6 +4,7 @@ var chalk = require('chalk');
 var swig = require('swig');
 var morgan = require('morgan');
 var routes = require('./routes');
+var bodyParser = require('body-parser');
 
 
 
